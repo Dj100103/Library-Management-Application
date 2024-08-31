@@ -100,7 +100,7 @@ def daily_reminder_task():
     for user in users:
         msg = Message(
             subject='Daily Reminder',
-            sender='21f3002500@ds.study.iitm.ac.in',  # Replace with your actual sender email
+            sender='your_mail_id',  # Replace with your actual sender email
             recipients=[user.email]
         )
         msg.body = "This is your daily reminder."
@@ -129,7 +129,7 @@ def send_due_date_reminders():
         if user:
             msg = Message(
                 subject='Book Return Reminder',
-                sender='21f3002500@ds.study.iitm.ac.in',  # Replace with your actual sender email
+                sender='your_mail_id',  # Replace with your actual sender email
                 recipients=[user.email]
             )
             msg.body = (f"Hello {user.username},\n\n"
