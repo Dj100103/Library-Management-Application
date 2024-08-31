@@ -1,7 +1,7 @@
 from flask_mail import Message
 from main import mail
 
-sender_mail='21f3002500@ds.study.iitm.ac.in'
+sender_mail='your_mail_id'
 def send_mail(to, subject, content_body):
     # mail=app.extensions.get('mail')
     msg = Message(
